@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-help.futureproofs.net	TRUE	/	FALSE	1999999999	PLAY_SESSION	e00d93cd57d275541e0abacb0a006631023971df-siteId=52933b0ee4b0865bc066c068&hs.session.id=7Kzg07cnt0X6h4au0dXVRIu1gVaHQy3l3fDvigieCF2U9W3RWhwjDeFJQqo61b2T&hs.session.exp=1647358193171"
-

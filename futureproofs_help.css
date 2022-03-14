@@ -1,0 +1,407 @@
+/*
+* Futureproofs help stylesheet v1.1
+* Copyright 2014-5 We Are Futureproofs Ltd
+* All rights reserved
+*/
+
+/* Table of Contents
+==================================================
+	#Colours
+	#Default styles
+	#Basic Styles
+	#Hiding stuff that we don't want
+	#Lists
+	#Structure
+	#Header
+	#Content
+	#Sidebar
+	#Footer area
+*/
+
+/* #Colours
+==================================================
+	white			/-white-/#ffffff
+	dark orange		/-dkorng-/#f57a19
+	light orange	/-ltorng-/#f4ca6d
+	light grey		/-ltgrey-/#e8eeec
+	blue			/-blue-/#4e90d4
+	dark grey		/-dkgrey-/#484a4c
+	black			/-black-/#231f20
+*/
+
+/* #Default styles (Inspired by Dave Gamache)
+================================================== */
+	html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, dfn, em, img, strong, sub, sup, tt, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, figcaption, footer, header, menu, nav, section, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+
+/* #Base styles
+================================================== */
+	html{
+		height:100%;
+	}
+
+	body {
+		width:100%;
+		height:100%;
+		background: /*white*/#ffffff;
+		font: 1em/1.3em "Lato", Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		color: /*black*/#231f20;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Lato", Helvetica, Arial, sans-serif;
+	}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 2.4em; line-height: 3em; }
+	h2 { font-size: 1.5em; line-height: 2em; margin-bottom: 10px; }
+	h3 { font-size: 2.4em; line-height: 2em; margin-bottom: 8px; }
+	h4 { font-size: 1em; line-height: 1.3em; margin-bottom: 4px; }
+	h5 { font-size: 1em; line-height: 1.3em; }
+	h6 { font-size: 1em; line-height: 1.3em; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+
+	a { color: /*blue*/#4e90d4; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: /*dkgrey*/#484a4c; }
+	a:visited { color: /*dkorng*/#f57a19; }
+
+	em { font-style: italic; }
+	strong { font-weight: 700; }
+	dfn { font-weight: 300; }
+
+	hr { border: solid /*dkgrey*/#484a4c; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+	[class^="icon-"], [class*=" icon-"] {
+		color:/*dkorng*/#f57a19;
+	}
+
+	[class^="icon-"]:before, [class*=" icon-"]:before {
+		color:/*dkorng*/#f57a19;
+	}
+
+/* #Hiding stuff that we don't want
+================================================== */
+	button.btn-navbar {
+		display:none;
+	}
+
+	#contactMobile {
+		display:none;
+	}
+
+	#contactModal {
+		display:none;
+	}
+
+	footer p span {
+		display:none;
+	}
+
+	.articleFoot p.lu {
+		display:none;
+	}
+
+/* #Lists
+================================================== */
+	ul, ol { margin: 4px 0 5px 30px; }
+	ul { list-style: disc; }
+	ol { list-style: decimal; }
+	li { margin-bottom: 20px; }
+
+/* #Structure
+================================================== */
+	#mainNav{
+		height:90px;
+		background-color:/*ltgrey*/#e8eeec;
+		border-bottom: 1px solid /*dkorng*/#f57a19;
+	}
+
+	.navbar .navbar-inner{
+		background-color:#f8f8f8;
+		box-shadow:none;
+		height:90px;
+	}
+
+	#content{
+		background: /*white*/#ffffff;
+		border: 1px solid /*dkorng*/#f57a19;
+		padding: 20px;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		color: /*black*/#231f20;
+		margin-top:20px;
+	}
+
+	#sidebar{
+		background: /*white*/#ffffff;
+		color: /*black*/#231f20;
+		margin-top:20px;
+	}
+
+	footer{
+		position:relative;
+		clear:both;
+		height:30px;
+		padding-top:20px;
+		width:100%;
+		background-color:/*white*/#ffffff;
+	}
+
+/* #Header
+================================================== */
+
+	#mainNav .brand span {
+		display: inline-block;
+		text-indent: -9000px;
+		width: 500px;
+		height: 60px;
+		background: url(../../../../../../../blog.wearefutureproofs.com/wp-content/uploads/2015/04/logo_help.png) no-repeat 0 0;
+		background-size: 100%;
+	}
+
+	a.brand{
+		float:left;
+		margin:0;
+		padding:0;
+	}
+
+	.navbar .brand{
+		padding-top:7px;
+	}
+
+	.collapse ul.nav{
+		position:relative;
+		margin-bottom:0px;
+		top:40px;
+		padding-bottom:0px;
+		float:right;
+		font-size:1em;
+		font-weight:400;
+		color:/*dkgrey*/#484a4c !important;
+	}
+
+	.collapse ul.nav li{
+		display:inline-block;
+		padding:0;
+		position:relative;
+	}
+
+	.collapse ul.nav li a{
+		text-decoration:none;
+		color:/*dkorng*/#f57a19 !important;
+		white-space: nowrap;
+		padding:0 0 0 30px;
+	}
+
+	.collapse ul.nav li a:hover{
+		color:/*dkgrey*/#484a4c;
+	}
+
+/* #Front page
+================================================== */
+	#docsSearch{
+		border-bottom: none;
+		background-color:/*white*/#ffffff;
+		margin:0;
+		padding:24px 0 8px 0;
+	}
+
+	#searchBar button {
+		position:relative;
+		top:-50px;
+		float:right;
+		background:/*blue*/#4e90d4;
+		border:none;
+	}
+
+	.category-list .category{
+		width:320px;
+		margin:0 11px 28px 11px;
+		padding:24px 6px 24px 6px;
+		border-color:/*dkorng*/#f57a19;
+	}
+
+	.category-list a{
+		text-decoration:none;
+	}
+
+	.category h3{
+		font-weight:400;
+		font-size:1.8em;
+	}
+
+	.category h3:hover{
+		color:/*dkorng*/#f57a19;
+	}
+
+	.category-list .category .article-count{
+		font-size:1.2em;
+		color:/*blue*/#4e90d4;
+	}
+
+	.category-list .category .article-count:hover{
+		color:/*dkorng*/#f57a19;
+	}
+
+/* #Content
+================================================== */
+	.contentWrapper{
+		border:0;
+		padding:25px;
+	}
+
+	.contentWrapper h1{
+		font-weight:300;
+		font-size:2em;
+	}
+
+	.articleList i:before{
+		color:/*dkorng*/#f57a19;
+	}
+
+	.articleList a{
+		text-decoration:none;
+		color:/*dkgrey*/#484a4c;
+	}
+
+	.articleList a span:hover{
+		text-decoration:none;
+		color:/*dkorng*/#f57a19;
+	}
+
+/* #Sidebar
+================================================== */
+	#sidebar .nav-list{
+		border: 1px solid /*dkorng*/#f57a19;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		margin:0;
+	}
+
+	#sidebar .nav-list li{
+		padding: 10px;
+		border-bottom: 1px solid /*ltorng*/#f4ca6d;
+		margin:0;
+	}
+
+	#sidebar .nav-list li.active{
+		background-color:/*ltgrey*/#e8eeec;
+	}
+
+	#sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus{
+		font-weight:400;
+		padding-bottom:1px;
+	}
+
+	#sidebar .nav-list li i{
+		font-size:1.4em;
+		float:right;
+	}
+
+	#sidebar .nav-list li a{
+		text-decoration:none;
+		width:100%;
+		color:/*dkgrey*/#484a4c;
+	}
+
+	#sidebar .nav-list li a:hover{
+		color:/*dkorng*/#f57a19;
+	}
+
+	#sidebar h3{
+		background:/*dkorng*/#f57a19;
+		color:/*white*/#ffffff;
+		padding:0px 20px;
+		margin:0;
+		text-transform:none;
+		font-weight:300;
+		font-size:1.8em;
+	}
+
+	#searchBar.sm{
+		border: 1px solid /*dkorng*/#f57a19;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		margin:0 0 30px 0;
+	}
+
+	#sidebar form .search-query {
+		border:0
+	}
+
+/* Article content area
+================================================== */
+	a.printArticle{
+		color:/*white*/#ffffff;
+	}
+
+	#fullArticle .printArticle {
+		top:30px;
+		right:30px;
+	}
+
+	#fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
+		font-size:16px;
+		color:/*dkgrey*/#484a4c;
+	}
+
+	#fullArticle h2 a{
+		color:/*dkgrey*/#484a4c;
+		text-decoration:none;
+	}
+
+	#fullArticle h2 a:hover{
+		color:/*dkgrey*/#484a4c;
+		text-decoration:none;
+	}
+
+	#fullArticle h3{
+		font-size:20px;
+		color:/*dkgrey*/#484a4c;
+		text-decoration:none;
+	}
+
+	#fullArticle h3 a{
+		color:/*dkgrey*/#484a4c;
+		text-decoration:none;
+	}
+
+	#fullArticle h3 a:hover{
+		color:/*dkgrey*/#484a4c;
+		text-decoration:none;
+	}
+
+	#sbContact {
+		border:0;
+	}
+
+/* Contact modal area
+================================================== */
+	#contactModal h2 {
+		background:/*ltorng*/#f4ca6d;
+		border-bottom: 1px solid /*dkorng*/#f57a19;
+		color: /*black*/#231f20;
+	}
+
+/* Footer area
+================================================== */
+	footer p{
+		font-size:.8em;
+		margin:0;
+		line-height:1.2em;
+		float:right;
+	}

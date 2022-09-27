@@ -1,1 +1,1 @@
-futureproofs_help_site
+This is a static HTML site, downloaded from the original Help site hosted with Helpscout. As a result, the organisation is a bit odd. I've made the changes needed for the page templates to work (removing references to Helpscout features like search) and this should thus be suitable to host on any static host.
